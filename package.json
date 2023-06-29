@@ -1,0 +1,29 @@
+{
+  "name": "scraper",
+  "version": "0.3.3",
+  "description": "static site generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "scraper": "index.js"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ghost",
+    "blog",
+    "static"
+  ],
+  "dependencies": {
+    "args": "^5.0.1",
+    "isbinaryfile": "^4.0.0",
+    "mv": "^2.1.1",
+    "rimraf": "^2.6.1",
+    "website-scraper": "^4.0.0"
+  }
+}
