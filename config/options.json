@@ -1,0 +1,8 @@
+{
+    "directory_to_save": "C:/Users/kiryl.harbacheuski/Documents/static/",
+    "site_url": "https://cm.wlglobal.solutions/ru/",
+    "locale": "ru",
+    "urlToReplace": "https://www.wlglobal.solutions/ru/",
+    "isRecursive": true,
+    "removeVersionFromFileNames": true
+}

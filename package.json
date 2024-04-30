@@ -3,9 +3,9 @@
   "version": "0.3.3",
   "description": "static site generator",
   "main": "index.js",
-  "type":"commonjs",
+  "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/app.js"
   },
   "bin": {
     "scraper": "index.js"
@@ -20,12 +20,9 @@
     "static"
   ],
   "dependencies": {
-    "args": "^5.0.1",
-    "isbinaryfile": "^4.0.0",
-    "mv": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "recursive-readdir": "^2.2.3",
-    "rimraf": "^2.6.1",
-    "website-scraper": "^4.0.0",
-    "website-scraper-puppeteer": "^1.1.0"
+    "website-scraper": "^4.0.0"
   }
 }

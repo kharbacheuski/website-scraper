@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSSG</title>
+    <script>
+        function gssg() {
+            const headers = {
+                "Referrer-Policy": "same-origin",
+                "Sec-Fetch-Mode": "cors",
+                "Sec-Fetch-Site": "same-origin",
+            }
+
+            fetch(`http://localhost:3000/gssg/`, {headers})
+        }
+    </script>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #download {
+            border: none;
+            outline: 0;
+
+            background-color: black;
+            font-size: 1rem;
+            color: white;
+            padding: 1rem 2rem;
+            cursor: pointer;
+        }
+        #download:hover {
+            background-color: #e2e2e2;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Все параметры указаны в файле config.json</p>
+            <button onclick="gssg()" id="download">Скачать сайт</button>
+        </div>
+    </div>
+</body>
+</html>
